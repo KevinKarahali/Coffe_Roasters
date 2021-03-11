@@ -1,0 +1,342 @@
+@import "./reset.scss";
+@import "./colors.scss";
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+h3 {
+  font-size: 3.2rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+.no-margin {
+  margin: 0;
+}
+//globales
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+
+.articles {
+  width: 30rem;
+}
+
+.articles_card {
+  padding-bottom: 4rem;
+}
+
+.article_info_title h3 {
+  font-weight: bold;
+  color: $brown;
+}
+.article_info_subtitle {
+  color: $gray;
+}
+
+h3 {
+  color: $brown;
+  font-weight: bold;
+}
+
+p {
+  color: $gray;
+}
+
+.banner {
+  max-height: 80vh;
+  margin-bottom: 4rem;
+}
+
+//vision mision objetivo
+//
+.articles {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 418px) {
+  .articles {
+    width: 38rem;
+  }
+}
+
+@media (min-width: 601px) {
+  .articles {
+    width: 60rem;
+  }
+  .article_card_imgs {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .articles {
+    width: 77rem;
+  }
+}
+@media (min-width: 1027px) {
+  .articles {
+    width: 80rem;
+  }
+  .article_card_imgs {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .articles {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .articles_card {
+    width: 30%;
+  }
+
+  .article_card_imgs {
+    width: 100%;
+  }
+}
+
+//cacao y cafe
+.cacao-cafe-bg {
+  background-color: #461731;
+  margin-bottom: 4rem;
+}
+
+.cacao-cafe-p {
+  color: $white;
+}
+
+@media (min-width: 418px) {
+  .cacao-cafe {
+    width: 38rem;
+  }
+}
+@media (min-width: 601px) {
+  .cacao-cafe {
+    width: 60rem;
+  }
+  .cacao-cafe-imgs {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  .cacao-cafe {
+    width: 80rem;
+  }
+}
+@media (min-width: 1027px) {
+  .cacao-cafe {
+    width: 80rem;
+  }
+  .cacao-cafe-imgs {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .cacao-cafe {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cacao-cafe-info {
+    width: 50%;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .cacao-img-c {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .cacao-cafe-imgs {
+    width: 30rem;
+    align-self: center;
+  }
+}
+
+.menu_title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.menu_title_h2 {
+  color: $black;
+  font-weight: lighter;
+}
+.menu_title_line {
+  background: $brown;
+  width: 42rem;
+  border: none;
+  height: 0.1rem;
+}
+//Menu
+
+.menu {
+  margin-bottom: 4rem;
+}
+
+.menu_wrapper_item_title {
+  font-size: 2.2rem;
+  font-weight: lighter;
+  color: $black;
+}
+.menu_wrapper_item_price {
+  font-size: 2.2rem;
+  font-weight: lighter;
+  color: $gray;
+}
+
+.menu_wrapper_h4 {
+  font-size: 1.5rem;
+  color: $brown;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.menu_line {
+  height: 0.3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 50%;
+  align-self: end;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .menu {
+    padding: 0 2rem;
+  }
+
+  .menu_wrapper_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 602px) {
+  .menu {
+    width: 60rem;
+  }
+  .menu_line {
+    display: inline-block;
+    width: 54%;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    width: 70rem;
+  }
+  .menu_line {
+    width: 60%;
+  }
+}
+
+@media (min-width: 991px) {
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu_column {
+    width: 50%;
+    padding: 0 2rem;
+  }
+  .menu_line {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu_line {
+    width: 50%;
+  }
+}
+
+//Horarios
+
+.contact {
+  background-image: url("../../images/fondo.png");
+  padding-top: 2rem;
+}
+
+.contact_wrap {
+  width: 70%;
+}
+.contact_p_email {
+  color: $brown;
+}
+
+.contact_p_number {
+  color: $white;
+}
+
+.contact_wrap_map {
+  padding: 2rem 0;
+}
+
+.google_maps {
+  width: 100%;
+  height: 28rem;
+}
+
+//footer
+
+.footer {
+  background-color: $black;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_p {
+  color: $white;
+  font-size: 1.5rem;
+}
+
+.span_footer {
+  color: $white;
+}
+
+.footer_link {
+  text-decoration: none;
+  color: $white;
+}
+
+.footer_link:hover {
+  text-decoration: underline;
+}
